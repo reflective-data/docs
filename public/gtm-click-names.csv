@@ -1,0 +1,25 @@
+click_name,where,meaning
+workspace_menu,Sidebar,Opened the workspace switcher.
+workspace_pick,Workspace switcher,Picked a project in the list.
+workspace_new_project,Workspace switcher,Chose New project.
+settings_menu,Sidebar,Opened the Settings menu.
+settings_activity,Settings menu,Opened Activity.
+settings_project_settings,Settings menu,Opened Project settings.
+settings_account_settings,Settings menu,Opened Account settings.
+settings_profile,Settings menu,Opened Profile.
+theme_dark / theme_light / theme_system,Settings menu,Chose a theme.
+sign_out,Settings menu,Pressed Sign out.
+home_ask_input,Home,Clicked into the ask box.
+home_ask_submit,Home,Pressed Ask.
+home_ask_suggestion,Home,Pressed a suggested question.
+home_setup_step,Home,Pressed a line in the setup checklist.
+home_tile_pipelines / _dbt / _dashboards / _knowledge,Home,Opened an area from a status tile.
+home_action_bot / _explore / _pipelines / _book / _build / _notebook,Home,"Pressed a quick action (Agent, Explore, Add a pipeline, Write a document, Code editor, Notebooks)."
+build_choose_managed,Build,Chose a managed repository.
+build_choose_github,Build,Chose Connect GitHub.
+build_move_to_github,Build,Pressed Move to GitHub.
+knowledge_view_write / _split / _preview,Knowledge editor,"Switched between Markdown, Side by side and Preview."
+knowledge_upload_md,Knowledge editor,Pressed Upload .md.
+knowledge_save,Knowledge editor,Pressed Save.
+"<label slug>, e.g. build, commit_push, add_pipeline, run",Everywhere else,"Anything without a fixed name uses its visible label, lowercased with underscores, up to 40 characters."
+"<element>_private, e.g. a_private, button_private",Lists of user content,"Chats, files, documents, dashboards, table rows: only the kind of element is reported, never its text."
