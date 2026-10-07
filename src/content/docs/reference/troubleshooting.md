@@ -46,3 +46,7 @@ The other service has to allow embedding. For Looker Studio, enable embedding in
 ## Still stuck
 
 Contact your Reflective Data account manager and tell them the project, what you did, and what you saw (a screenshot helps).
+
+## "That repository already has code" when moving to GitHub
+
+Moving a managed repository copies it into a GitHub repository, and only into an **empty** one so nothing is overwritten. Create a new empty repository on GitHub (no README) and choose that.

@@ -16,7 +16,7 @@ description: Who can do what, by role.
 | **Knowledge**: write, edit, delete | – | ✓ | ✓ |
 | **Build**: read code, run logs, schedules | ✓ | ✓ | ✓ |
 | **Build**: edit files, commit, pull, run dbt, manage schedules | – | ✓ | ✓ |
-| Link the GitHub repository | – | – | ✓ |
+| Choose where code lives (GitHub or managed), move to GitHub | – | – | ✓ |
 | **BigQuery connection**: set up, change, test | – | – | ✓ |
 | **Pipelines**: see status and history | ✓ | ✓ | ✓ |
 | **Pipelines**: create, edit, sync, pause, delete | – | ✓ | ✓ |
