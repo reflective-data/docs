@@ -38,7 +38,7 @@ We keep your dbt code, with full commit history, **on the platform**. There's no
 
 Keep the project in **your own GitHub repository**:
 
-1. Choose **Connect GitHub** and install the Reflective Data GitHub app on your organisation or account, selecting the repositories it may access.
+1. Choose **Connect GitHub** and sign in with GitHub. If the Reflective Data GitHub app is already installed on your account or organisation it is used (you choose one if there are several); otherwise you install it and select the repositories it may access. To give it more repositories later, open the app's settings on GitHub (**Configure**), then come back to Build.
 2. Back in Build, pick the **repository** and, if you like, a **branch** (otherwise the repository's default).
 
 The platform checks that you really have access to the installation, so nobody can link repositories they don't own. If the repository is empty, Build offers to create a starter dbt project in it.
