@@ -174,6 +174,15 @@ Parameters that only some events carry:
 | `knowledge_doc_deleted` | A document was deleted. | – |
 | `knowledge_doc_downloaded` | A document was downloaded as Markdown. | – |
 
+### AI apps (MCP)
+
+| Event | Fires when | Extra parameters |
+|---|---|---|
+| `mcp_connection_approved` | Someone allowed an AI app to connect to a project. | – |
+| `mcp_connection_revoked` | A connection of an AI app was disconnected. | – |
+| `mcp_token_created` | A personal token was created (never its value). | – |
+| `mcp_settings_saved` | An admin changed the project's MCP switches. | – |
+
 ### Other
 
 | Event | Fires when | Extra parameters |
@@ -205,6 +214,11 @@ Parameters that only some events carry:
 | `home_action_bot / _explore / _pipelines / _book / _build / _notebook` | Home | Pressed a quick action (Agent, Explore, Add a pipeline, Write a document, Code editor, Notebooks). |
 | `build_choose_managed` | Build | Chose a managed repository. |
 | `build_choose_github` | Build | Chose Connect GitHub. |
+| `build_choose_github_account` | Build | Picked which GitHub account holds the repository. |
+| `mcp_allow` | AI apps (MCP) | Allowed an AI app on the connect screen. |
+| `mcp_decline` | AI apps (MCP) | Cancelled on the connect screen. |
+| `mcp_revoke` | AI apps (MCP) | Disconnected an AI app. |
+| `mcp_make_token` | AI apps (MCP) | Created a personal token. |
 | `build_move_to_github` | Build | Pressed Move to GitHub. |
 | `knowledge_view_write / _split / _preview` | Knowledge editor | Switched between Markdown, Side by side and Preview. |
 | `knowledge_upload_md` | Knowledge editor | Pressed Upload .md. |

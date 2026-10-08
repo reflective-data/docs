@@ -30,7 +30,7 @@ export default defineConfig({
         { label: "Dashboards", items: [{ slug: "dashboards/overview" }] },
         { label: "Knowledge", items: [{ slug: "knowledge/overview" }] },
         { label: "Agent", items: [
-          { slug: "agent/overview" }, { slug: "agent/charts" }, { slug: "agent/setup" },
+          { slug: "agent/overview" }, { slug: "agent/charts" }, { slug: "agent/setup" }, { slug: "agent/mcp" },
         ] },
         { label: "Activity & settings", items: [
           { slug: "activity/overview" }, { slug: "settings/project" }, { slug: "settings/account" },
