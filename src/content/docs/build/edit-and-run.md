@@ -30,7 +30,7 @@ In the **Runs** panel choose a command and press **Run**:
 | `compile` | Compiles the SQL without running it. |
 | `snapshot` | Runs snapshots. |
 
-- **`--select`** (optional) limits what runs, for example `my_model+` or `tag:daily`.
+- **Models to run** (optional) limits what runs, for example `my_model+` or `tag:daily`. Type just the selector; `--select` is added for you.
 - **Source**: *Working copy* runs your files as they are now, including unsaved-to-GitHub changes; *Committed code* runs a fresh copy of what's on your branch.
 
 The log streams live. **Cancel run** stops it. Past runs are listed with their status, so you can open the log of any of them.

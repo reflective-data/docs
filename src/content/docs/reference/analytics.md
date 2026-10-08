@@ -113,6 +113,7 @@ Parameters that only some events carry:
 | `schedule_updated` | A schedule was changed, paused or resumed. | – |
 | `schedule_deleted` | A schedule was deleted. | – |
 | `schedule_run_now` | A schedule was run immediately. | – |
+| `build_history_restored` | A file was put back to an earlier version (nothing committed). | – |
 
 ### Connections
 
@@ -215,6 +216,11 @@ Parameters that only some events carry:
 | `build_choose_managed` | Build | Chose a managed repository. |
 | `build_choose_github` | Build | Chose Connect GitHub. |
 | `build_choose_github_account` | Build | Picked which GitHub account holds the repository. |
+| `build_history_toggle` | Build | Opened or closed the History panel. |
+| `build_history_file` | Build | Opened the history of one file. |
+| `build_history_all` | Build | Went back to all commits. |
+| `build_history_commit` | Build | Opened or closed a commit in the history. |
+| `build_history_restore` | Build | Restored a file to an earlier version. |
 | `mcp_allow` | AI apps (MCP) | Allowed an AI app on the connect screen. |
 | `mcp_decline` | AI apps (MCP) | Cancelled on the connect screen. |
 | `mcp_revoke` | AI apps (MCP) | Disconnected an AI app. |

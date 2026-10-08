@@ -21,7 +21,7 @@ export default defineConfig({
           { slug: "pipelines/overview" }, { slug: "pipelines/add-a-pipeline" }, { slug: "pipelines/manage" },
         ] },
         { label: "Build (dbt)", items: [
-          { slug: "build/overview" }, { slug: "build/connect" }, { slug: "build/edit-and-run" }, { slug: "build/schedules" },
+          { slug: "build/overview" }, { slug: "build/connect" }, { slug: "build/edit-and-run" }, { slug: "build/history" }, { slug: "build/schedules" },
         ] },
         { label: "Explore", items: [
           { slug: "explore/overview" }, { slug: "explore/query-size" }, { slug: "explore/sql-and-views" },
