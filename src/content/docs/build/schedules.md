@@ -10,7 +10,7 @@ A schedule runs a dbt command regularly, so your tables stay up to date. Editors
 Press **+ New schedule** and set:
 
 - **Name**, for example *Nightly build*.
-- **Command** and optionally which models to run (the selector, for example `ga4_events`, `my_model+` or `tag:daily`; there's no need to type `--select`).
+- **Command** and optionally which models to run (the selector, for example `ga4_events`, `my_model+` or `tag:daily`, with the options `--full-refresh`, `--fail-fast` and `--exclude`; there's no need to type `--select`). Think twice before scheduling `--full-refresh`: it rebuilds from scratch every time and costs accordingly.
 - **How often**: every hour (at a minute you choose), every day or every week (at a time you choose), or a **custom cron** expression (`minute hour day month weekday`, for example `0 6 * * 1-5` for 06:00 on weekdays).
 - The **time zone** the times refer to.
 

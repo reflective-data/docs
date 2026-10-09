@@ -29,9 +29,8 @@ End users of the platform: analysts, marketers and engineers at our clients. **N
 1. Update or add the page for the feature (`src/content/docs/<area>/`), and add new pages to the sidebar in `astro.config.mjs`.
 2. Update [`reference/permissions`](src/content/docs/reference/permissions.md) if who-can-do-what changed.
 3. Update [`reference/limits-and-costs`](src/content/docs/reference/limits-and-costs.md) if a limit or a cost changed.
-4. If tracking events changed, edit the lists in `scripts/analytics_reference.py` and run `python3 scripts/analytics_reference.py`: it rewrites [`reference/analytics`](src/content/docs/reference/analytics.md) and the three CSV files in `public/` (events, parameters, click names) from one source, so they never disagree.
-5. Update [`reference/troubleshooting`](src/content/docs/reference/troubleshooting.md) when there's a new common problem.
-6. Run `pnpm build`; it fails on broken sidebar entries and front matter.
+4. Update [`reference/troubleshooting`](src/content/docs/reference/troubleshooting.md) when there's a new common problem.
+5. Run `pnpm build`; it fails on broken sidebar entries and front matter.
 
 ## Layout
 
@@ -41,6 +40,6 @@ src/content/docs/
   getting-started/          sign in, workspace, home, roles
   pipelines/  build/  explore/  notebooks/  dashboards/  knowledge/  agent/
   activity/  settings/
-  reference/                permissions, limits and costs, analytics events, troubleshooting
+  reference/                permissions, limits and costs, troubleshooting
 src/styles/custom.css       design-system colours and fonts
 ```

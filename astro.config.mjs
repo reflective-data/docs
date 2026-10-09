@@ -38,7 +38,7 @@ export default defineConfig({
           { slug: "activity/overview" }, { slug: "settings/project" }, { slug: "settings/account" },
         ] },
         { label: "Reference", items: [
-          { slug: "reference/permissions" }, { slug: "reference/limits-and-costs" }, { slug: "reference/analytics" }, { slug: "reference/troubleshooting" },
+          { slug: "reference/permissions" }, { slug: "reference/limits-and-costs" }, { slug: "reference/troubleshooting" },
         ] },
       ],
     }),

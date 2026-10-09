@@ -30,7 +30,11 @@ In the **Runs** panel choose a command and press **Run**:
 | `compile` | Compiles the SQL without running it. |
 | `snapshot` | Runs snapshots. |
 
-- **Models to run** (optional) limits what runs, for example `my_model+` or `tag:daily`. Type just the selector; `--select` is added for you.
+- **Models and options** (optional) limits what runs and how. Type a selector such as `my_model+` or `tag:daily` (`--select` is added for you), and optionally:
+  - `--full-refresh` rebuilds incremental models from scratch (for example `ga4_events --full-refresh`, or just `--full-refresh` for everything);
+  - `--fail-fast` stops at the first failure;
+  - `--exclude other_model` leaves something out.
+  Other dbt options aren't allowed, so a run can't be pointed anywhere else.
 - **Source**: *Working copy* runs your files as they are now, including unsaved-to-GitHub changes; *Committed code* runs a fresh copy of what's on your branch.
 
 The log streams live. **Cancel run** stops it. Past runs are listed with their status, so you can open the log of any of them.
