@@ -34,7 +34,7 @@ In the **Runs** panel choose a command and press **Run**:
   - `--full-refresh` rebuilds incremental models from scratch (for example `ga4_events --full-refresh`, or just `--full-refresh` for everything);
   - `--fail-fast` stops at the first failure;
   - `--exclude other_model` leaves something out.
-  Other dbt options aren't allowed, so a run can't be pointed anywhere else.
+  Other dbt options aren't allowed, so a run can't be pointed anywhere else. The box is forgiving: a long dash typed by your keyboard (—), a single dash (`-full-refresh`) or a leading `--select` are all understood.
 - **Source**: *Working copy* runs your files as they are now, including unsaved-to-GitHub changes; *Committed code* runs a fresh copy of what's on your branch.
 
 The log streams live. **Cancel run** stops it. Past runs are listed with their status, so you can open the log of any of them.
