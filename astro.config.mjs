@@ -16,28 +16,28 @@ export default defineConfig({
       editLink: { baseUrl: "https://github.com/reflective-data/docs/edit/main/" },
       lastUpdated: true,
       sidebar: [
-        { label: "Start here", items: [
+        { label: "Start here", collapsed: true, items: [
           { slug: "index" }, { slug: "getting-started/sign-in" }, { slug: "getting-started/workspace" }, { slug: "getting-started/home" }, { slug: "getting-started/roles" },
         ] },
-        { label: "Pipelines", items: [
+        { label: "Pipelines", collapsed: true, items: [
           { slug: "pipelines/overview" }, { slug: "pipelines/add-a-pipeline" }, { slug: "pipelines/manage" },
         ] },
-        { label: "Build (dbt)", items: [
+        { label: "Build (dbt)", collapsed: true, items: [
           { slug: "build/overview" }, { slug: "build/connect" }, { slug: "build/edit-and-run" }, { slug: "build/history" }, { slug: "build/schedules" },
         ] },
-        { label: "Explore", items: [
+        { label: "Explore", collapsed: true, items: [
           { slug: "explore/overview" }, { slug: "explore/query-size" }, { slug: "explore/sql-and-views" },
         ] },
-        { label: "Notebooks", items: [{ slug: "notebooks/overview" }] },
-        { label: "Dashboards", items: [{ slug: "dashboards/overview" }] },
-        { label: "Knowledge", items: [{ slug: "knowledge/overview" }] },
-        { label: "Agent", items: [
+        { label: "Notebooks", collapsed: true, items: [{ slug: "notebooks/overview" }] },
+        { label: "Dashboards", collapsed: true, items: [{ slug: "dashboards/overview" }] },
+        { label: "Knowledge", collapsed: true, items: [{ slug: "knowledge/overview" }] },
+        { label: "Agent", collapsed: true, items: [
           { slug: "agent/overview" }, { slug: "agent/charts" }, { slug: "agent/setup" }, { slug: "agent/mcp" },
         ] },
-        { label: "Activity & settings", items: [
+        { label: "Activity & settings", collapsed: true, items: [
           { slug: "activity/overview" }, { slug: "settings/project" }, { slug: "settings/account" },
         ] },
-        { label: "Reference", items: [
+        { label: "Reference", collapsed: true, items: [
           { slug: "reference/permissions" }, { slug: "reference/limits-and-costs" }, { slug: "reference/troubleshooting" },
         ] },
       ],
