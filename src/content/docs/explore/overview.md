@@ -11,6 +11,14 @@ An **admin** presses **Enable Explore** once per project. This checks the BigQue
 
 You don't sign in again; Explore uses your platform login.
 
+## Keeping Explore up to date with dbt
+
+Explore's list of tables, dimensions and metrics comes from your **committed** dbt code. It refreshes by itself after every successful dbt run on committed code: scheduled runs, and manual runs started with **Committed code**. Runs on the **Working copy**, failed runs and commits alone don't refresh it.
+
+Data is different: Explore reads BigQuery live, so new rows appear as soon as dbt has written them, with no refresh.
+
+To refresh the models right now (for example after committing a new model and running it), editors and admins press **↻ Refresh models** at the top of Explore. It rebuilds from your latest committed code and reopens Explore.
+
 ## Working in Explore
 
 1. Pick a **table** (one of your models).
