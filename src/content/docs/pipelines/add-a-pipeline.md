@@ -30,7 +30,7 @@ The platform looks at the source and lists its tables. The first time can take a
 ## 4. Schedule
 
 - **Pipeline name**: how it appears in the list.
-- **How often**: *every day at a set time* (choose the time and time zone), *every few hours*, or *only when I run it*.
+- **How often**: *every day at a set time* (choose the time and time zone), *every few hours* (1, 2, 3, 6, 8, 12 or 24), or *only when I run it*. For every few hours you can also tick **at set times, starting** and pick a start time and time zone: *every 12 hours starting 08:30* then runs every day at 08:30 and 20:30. Without it the runs are counted from the previous one, so the clock times can drift.
 - **BigQuery dataset**: where the tables land. It defaults to the project's dataset. Type a new name to use a different one: it's created if needed. Names can contain letters, numbers and underscores, and can't be the dataset your dbt models write to.
 
 Press **Create pipeline**. The first copy starts straight away, so there is data to look at; after that it follows the schedule.
