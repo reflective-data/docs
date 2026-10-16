@@ -38,4 +38,4 @@ The platform keeps your place. If you leave the Agent to check a dashboard and c
 
 ## Light and dark mode
 
-Open **Settings** and choose **Dark**, **Light** or **System**. Embedded tools such as Explore follow your choice. Pages from other services (for example an external dashboard) keep their own look.
+Open **Settings** and choose **Light**, **Dark** or **System** (the app starts on Light). Embedded tools such as Explore follow your choice. Pages from other services (for example an external dashboard) keep their own look.

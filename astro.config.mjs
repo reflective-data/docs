@@ -10,7 +10,7 @@ export default defineConfig({
       description: "How to use the Reflective Data platform: pipelines, dbt, Explore, notebooks, dashboards, knowledge and the data agent.",
       favicon: "/favicon.svg",
       // The same Tag Manager container as reflectivedata.com
-      head: [{ tag: "script", content: "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MHSPRS');" }],
+      head: [{ tag: "script", content: "try{if(!localStorage.getItem('starlight-theme'))localStorage.setItem('starlight-theme','light')}catch(e){}" }, { tag: "script", content: "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MHSPRS');" }],
       customCss: ["@fontsource-variable/inter", "@fontsource-variable/jetbrains-mono", "./src/styles/custom.css"],
       social: [{ icon: "external", label: "reflectivedata.com", href: "https://reflectivedata.com" }],
       editLink: { baseUrl: "https://github.com/reflective-data/docs/edit/main/" },

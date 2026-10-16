@@ -17,4 +17,4 @@ Open **Settings → Profile** to change your display name. Your email address is
 
 ## Theme and sign out
 
-The same **Settings** menu has the **Dark / Light / System** switch and **Sign out**.
+The same **Settings** menu has the **Light / Dark / System** switch (it starts on Light) and **Sign out**.

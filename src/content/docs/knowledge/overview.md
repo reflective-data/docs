@@ -7,6 +7,10 @@ description: Write down what your numbers mean, in Markdown, where everyone and 
 
 The [Agent](/agent/overview/) reads these documents too, so writing a definition down once makes its answers match how your team talks about the numbers.
 
+## What the Agent may read
+
+Some notes aren't meant for AI: drafts, personal reminders, anything that would only confuse an answer. Every document has an **Available to the Agent (and connected AI apps)** tick box, on when you write it and again at the top of the document. Switch it off and the [Agent](/agent/overview/) and any AI app connected over [MCP](/agent/mcp/) can no longer see that document, neither its title nor its text. People in the project still can. Documents hidden from the Agent are marked **hidden from Agent** in the list. Editors and admins can change it at any time.
+
 ## Finding things
 
 The list works like [Dashboards](/dashboards/overview/): **sort** by *last opened*, *recently updated*, *recently created* or *A to Z* (remembered for you), and **search** titles and text.
