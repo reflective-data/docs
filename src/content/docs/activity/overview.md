@@ -10,6 +10,8 @@ description: "A record of the queries and jobs run on the platform: who, where, 
 | App | What's recorded |
 |---|---|
 | Agent | The queries it ran for each question, including ones that were blocked for being too large. |
+| AI apps (MCP) | The queries AI apps connected over MCP ran, and with which app. |
+| CLI / API | The SELECT queries run from the [command line](/cli/overview/), the [API](/cli/api/) or the app's CLI page. |
 | Explore, SQL runner, Dashboards | Queries run from the explorer, the SQL runner, dashboards and scheduled deliveries. |
 | Build (dbt) | Each dbt run, and the queries dbt ran. |
 | Notebooks | Queries run from notebooks (not tied to a person, since a notebook environment is shared by the project). |

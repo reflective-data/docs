@@ -15,6 +15,8 @@ Open **Settings → Account settings** (account admins).
 
 Open **Settings → Profile** to change your display name. Your email address is your identity and can't be changed there.
 
+The same page has **Access tokens**: everything that acts as you from outside the app (the [command line](/cli/overview/), the [API](/cli/api/) and [AI apps](/agent/mcp/)). You can create tokens there and end any of them at any time.
+
 ## Theme and sign out
 
 The same **Settings** menu has the **Light / Dark / System** switch (it starts on Light) and **Sign out**.

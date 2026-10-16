@@ -26,7 +26,7 @@ https://api.reflectivedata.com/mcp
 
 - **Claude (claude.ai and the desktop app):** *Settings → Connectors → Add custom connector*, paste the address, and follow the sign-in. You sign in to Reflective Data, choose the project and press **Allow**.
 - **Other apps that sign in with the browser:** add a remote MCP server with the same address; the app opens the same screen.
-- **Tools that can't sign in with the browser** (some command-line and editor tools): in **Profile settings → AI apps** make a **token** for a project, then send it as `Authorization: Bearer <token>`. The token is shown once; treat it like a password.
+- **Tools that can't sign in with the browser** (some command-line and editor tools): in **Profile settings → Access tokens** make a **token** for a project, then send it as `Authorization: Bearer <token>`. The token is shown once; treat it like a password.
 
 ## Costs, limits and visibility
 
@@ -37,5 +37,5 @@ https://api.reflectivedata.com/mcp
 
 ## Managing connections
 
-- **You:** *Profile settings → AI apps* lists your connections; **Disconnect** ends one at once.
+- **You:** *Profile settings → Access tokens* lists your connections; **Disconnect** ends one at once.
 - **Project admins:** *Project settings → AI apps (MCP)* has two switches: allow connections at all (turning it off disconnects everyone) and allow SQL. It also lists everyone's connections, which an admin can disconnect.

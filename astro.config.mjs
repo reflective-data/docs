@@ -34,6 +34,9 @@ export default defineConfig({
         { label: "Agent", collapsed: true, items: [
           { slug: "agent/overview" }, { slug: "agent/charts" }, { slug: "agent/setup" }, { slug: "agent/mcp" },
         ] },
+        { label: "CLI & API", collapsed: true, items: [
+          { slug: "cli/overview" }, { slug: "cli/commands" }, { slug: "cli/api" },
+        ] },
         { label: "Activity & settings", collapsed: true, items: [
           { slug: "activity/overview" }, { slug: "settings/project" }, { slug: "settings/account" },
         ] },
