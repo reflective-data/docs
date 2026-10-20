@@ -7,14 +7,16 @@ The **Pipelines** page lists every pipeline in the project with its source, data
 
 ## Actions on a pipeline
 
+**Sync now** sits at the end of each row. The other actions are in the **⋯** menu next to it.
+
 | Action | What it does |
 |---|---|
 | **Sync now** | Starts a run immediately, in addition to the schedule. |
-| **Edit pipeline** | Change the name, schedule, BigQuery dataset, which tables are copied and how. |
-| **Edit source** | Change the source's settings or credentials. |
-| **Pause / Resume** | Stops or restarts scheduled runs without deleting anything. |
-| **Delete** | Removes the pipeline (and optionally its source). Data already in BigQuery stays. |
-| **History** | The last runs: when, how many rows, how much data, and whether it worked. Editors also see the reason for a failure. |
+| **Edit pipeline** (⋯) | Change the name, schedule, BigQuery dataset, which tables are copied and how. |
+| **Edit source** (⋯) | Change the source's settings or credentials. |
+| **Pause / Resume** (⋯) | Stops or restarts scheduled runs without deleting anything. |
+| **Delete** (⋯) | Removes the pipeline (and optionally its source). Data already in BigQuery stays. |
+| **History** | Click a pipeline's row to see the last runs: when, how many rows, how much data, and whether it worked. Editors also see the reason for a failure. |
 
 ## Editing a pipeline
 

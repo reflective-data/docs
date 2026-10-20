@@ -5,6 +5,8 @@ description: Edit and run your dbt project, with the code kept in GitHub.
 
 **Build** is where you work on the code that turns raw data into clean, reliable tables: a [dbt](https://docs.getdbt.com) project. Your code lives in **your own GitHub repository** or in a **managed repository** we keep for you (no GitHub account needed); Build gives you an editor, a way to run dbt against your BigQuery, and schedules.
 
+The page has three tabs: **Code** (files, changes and history), **Runs** (start dbt and read the log) and **Schedules**.
+
 What you can do here:
 
 - Browse and edit the files of your dbt project in a code editor.

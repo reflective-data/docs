@@ -22,13 +22,15 @@ Everything on the page follows the project you picked, and the platform remember
 
 ## The sidebar
 
-| Item | |
+| Group | Items |
 |---|---|
-| Home | Overview of the project. |
-| Pipelines, Build, Explore, Notebooks, Dashboards | The data tools. |
-| Knowledge | Your team's documents. |
-| Agent | Ask questions about your data (editors and admins). |
-| **Settings** | Activity, project settings, account settings, your profile, the light/dark theme, and sign out. |
+| (top) | **Home**: overview of the project. |
+| **Data** | Pipelines, Build, Explore, Notebooks: the data tools. |
+| **Share** | Dashboards, and Knowledge (your team's documents). |
+| **Automate** | **Agent** (ask questions about your data) and **CLI** (the command console), both for editors and admins. |
+| **Settings** (bottom) | Activity, project settings, account settings, your profile and access tokens, the light/dark theme, and sign out. |
+
+Above every page title, a small path shows where you are, like `your-account › your-project › build`.
 
 Use the menu button at the top of the sidebar to collapse it to icons.
 
