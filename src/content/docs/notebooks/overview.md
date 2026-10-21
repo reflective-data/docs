@@ -29,6 +29,10 @@ No key file is needed; the environment is already authorised.
 - A notebook environment is private to its project. It can't reach other projects' data or the platform itself, and its internet access is limited to public HTTPS sites.
 - It **stops automatically after 60 minutes** without activity, to save resources. Start it again when you need it. Files in `notebooks/` are kept.
 
+## Write notebooks with the Agent
+
+The **Use Agent** button on the Notebook page (or the [Agent](/agent/overview/) itself) can create a notebook or add cells to one: *Create a notebook that charts sessions by source*. It shows you the cells first and writes them into the `notebooks/` folder only when you press **Apply**; you run the notebook yourself, and commit it from Build to share it.
+
 ## For viewers
 
 Viewers can't run code. Instead they can open the **finished, saved results** of notebooks read-only (the output you last saved), at a comfortable reading width.

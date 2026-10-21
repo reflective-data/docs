@@ -25,7 +25,7 @@ Every query is checked **before** it runs. If it would process more than the pro
 
 ## Use Agent on every page
 
-**Pipelines, Build, Explore, Dashboards and Knowledge** each have a **Use Agent** button next to their usual actions. It offers a few suggestions for that page (for example *Run the models I changed* in Build) and a box to describe what you want; pressing one opens the Agent with that already sent. In Pipelines, a row's **⋯ menu → Change with Agent** opens the Agent with that pipeline named, so you only finish the sentence. It's the same Agent as the Agent tab, with the same approval step.
+**Pipelines, Build, Explore, Notebook, Dashboards and Knowledge** each have a **Use Agent** button next to their usual actions. It opens a wide box at the bottom of the page with a few suggestions for that page (for example *Run the models I changed* in Build) and room to describe what you want over several lines (Enter sends, Shift+Enter adds a line); sending opens the Agent with that already sent. In Pipelines, a row's **⋯ menu → Change with Agent** opens the Agent with that pipeline named, so you only finish the sentence. It's the same Agent as the Agent tab, with the same approval step.
 
 ## Making changes: you approve each one
 
@@ -44,6 +44,9 @@ The agent can also **set up and change pipelines** for you. It never changes any
 | *Run the changed models* / *do a full refresh of ga4_events* | A dbt run (`build`, `run`, `test` ... with your selection) |
 | *Run dbt every day at 21:00 UTC* | A [dbt schedule](/build/schedules/) (create, change, pause, resume, delete, run now) |
 | *Add a metric for paid orders to the orders model* | A change to the model's YAML in Explore's format (metrics, dimensions, labels, descriptions), then *Refresh Explore* |
+| *Save that as a bar chart* / *Build a dashboard with the top pages and sources* | A chart or dashboard saved in [Explore](/explore/overview/), created as you (new and existing charts can go on one dashboard) |
+| *Add our Looker Studio report as a dashboard* | An external dashboard link (project admins only) |
+| *Create a notebook that charts sessions by source* / *add a cell that finds the top landing pages* | Cells written into a [notebook](/notebooks/overview/) in the project's notebooks folder |
 | *Refresh Explore* | Reads the committed dbt code into Explore |
 | *Write a document defining how we count active users* | A new [Knowledge](/knowledge/overview/) document (or a change to one; the agent can only change documents it can read) |
 | *Why did last night's dbt run fail?* | Nothing to approve: it reads the log and explains |
