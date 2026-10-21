@@ -45,3 +45,6 @@ h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; }
 .sidebar-content a { font-size: 0.82rem; }
 .right-sidebar a { font-size: 0.78rem; }
 ::selection { background: var(--sl-color-accent-high); color: #04101f; }
+
+/* The "ask the docs" agent is a bar docked at the bottom: keep the last lines of a page clear of it */
+main { padding-bottom: 5rem; }
