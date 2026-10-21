@@ -27,7 +27,7 @@ Every query is checked **before** it runs. If it would process more than the pro
 
 **Pipelines, Build, Explore, Notebook, Dashboards and Knowledge** each have a **Use Agent** button next to their usual actions. It opens a wide box at the bottom of the page, and the whole conversation happens there: suggestions for that page, room to describe what you want over several lines (Enter sends, Shift+Enter adds a line), and the cards you approve with **Apply**. When a change is applied the page refreshes itself. The box keeps the conversation while you stay on the same project; **Open in Agent** continues it in the full Agent page, and **New chat** starts over.
 
-The Agent is told which page you're on and what you have open there: in Pipelines the pipeline you've expanded, in Build the open file, the tab and your uncommitted changes. So *Pause this one* or *Explain the open file* works. In **Explore** the chart is shown in an embedded view the Agent can't see, so it doesn't know which chart is open: give it the chart's name. In Pipelines, a row's **⋯ menu → Change with Agent** opens the full Agent page with that pipeline named, so you only finish the sentence. It's the same Agent as the Agent tab, with the same approval step.
+The Agent is told which page you're on and what you have open there: in Pipelines the pipeline you've expanded, in Build the open file, the tab and your uncommitted changes. So *Pause this one* or *Explain the open file* works. In **Explore** it knows what is open: a saved chart (*Add a metric to this chart*), a dashboard, the model you're building a chart on, or the SQL runner. For a saved chart it can describe it and prepare a change (add or remove metrics and dimensions, change the chart type or name), which saves a new version of the chart when you press Apply. In Pipelines, a row's **⋯ menu → Change with Agent** opens the full Agent page with that pipeline named, so you only finish the sentence. It's the same Agent as the Agent tab, with the same approval step.
 
 ## Making changes: you approve each one
 
@@ -46,6 +46,7 @@ The agent can also **set up and change pipelines** for you. It never changes any
 | *Run the changed models* / *do a full refresh of ga4_events* | A dbt run (`build`, `run`, `test` ... with your selection) |
 | *Run dbt every day at 21:00 UTC* | A [dbt schedule](/build/schedules/) (create, change, pause, resume, delete, run now) |
 | *Add a metric for paid orders to the orders model* | A change to the model's YAML in Explore's format (metrics, dimensions, labels, descriptions), then *Refresh Explore* |
+| *Add Events as a metric to this chart* | A new version of the open saved chart in Explore |
 | *Save that as a bar chart* / *Build a dashboard with the top pages and sources* | A chart or dashboard saved in [Explore](/explore/overview/), created as you (new and existing charts can go on one dashboard) |
 | *Add our Looker Studio report as a dashboard* | An external dashboard link (project admins only) |
 | *Create a notebook that charts sessions by source* / *add a cell that finds the top landing pages* | Cells written into a [notebook](/notebooks/overview/) in the project's notebooks folder |
