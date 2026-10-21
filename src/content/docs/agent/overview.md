@@ -35,6 +35,13 @@ The agent can also **set up and change pipelines** for you. It never changes any
 | *Pause the Bing pipeline* / *sync HubSpot now* | Pause, resume, or a run right away |
 | *Why did last night's sync fail?* | Nothing to approve: it reads the runs and explains |
 | *Delete the old pipeline* | A deletion card (the source and the data already copied stay) |
+| *Add a staging model for HubSpot deals* | New or changed files in your dbt repository, shown as a diff |
+| *Add descriptions to the ga4_events columns* | A change to the model's YAML (Explore picks the descriptions up after the next run) |
+| *Run the changed models* / *do a full refresh of ga4_events* | A dbt run (`build`, `run`, `test` ... with your selection) |
+| *Run dbt every day at 21:00 UTC* | A [dbt schedule](/build/schedules/) (create, change, pause, resume, delete, run now) |
+| *Why did last night's dbt run fail?* | Nothing to approve: it reads the log and explains |
+
+**Code changes** show a diff of every file, and you choose where it goes: **Commit to main** (scheduled runs and Explore use it from then on) or **Put on a new branch**, which is pushed to GitHub for you to review and merge there (the card links to it). Repositories that are managed by the platform, without GitHub, can only commit to main. Only the dbt code can be changed this way (`models`, `macros`, `tests`, `seeds`, `snapshots`, `analyses`, `dbt_project.yml`, `packages.yml`); nothing else in the repository. Only the files in the change are committed: other edits waiting in the Build editor are left alone (if the change touches a file you have edited there, the card warns you). dbt runs always wait for your click, because they use BigQuery.
 
 You need the same role as for doing it by hand: editors and admins. A new **source** needs your account's login details, so the agent sends you to **Pipelines → Add pipeline** for that; never type passwords or keys into the chat. Applied changes show in [Activity](/activity/overview/) where the screens log them, and the card keeps a link to the result. From the [command line](/cli/overview/), `rd ask` shows what is waiting for approval; approving is done in the app.
 
