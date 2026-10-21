@@ -23,6 +23,10 @@ Above each answer, **steps** shows what it did: the query, the SQL, the rows it 
 
 Every query is checked **before** it runs. If it would process more than the project's [limit](/explore/query-size/), it isn't run and the agent narrows it. For tables partitioned by date, the agent always limits the date range (the last 30 days if you didn't say), and tells you.
 
+## Use Agent on every page
+
+**Pipelines, Build, Explore, Dashboards and Knowledge** each have a **Use Agent** button next to their usual actions. It offers a few suggestions for that page (for example *Run the models I changed* in Build) and a box to describe what you want; pressing one opens the Agent with that already sent. In Pipelines, a row's **⋯ menu → Change with Agent** opens the Agent with that pipeline named, so you only finish the sentence. It's the same Agent as the Agent tab, with the same approval step.
+
 ## Making changes: you approve each one
 
 The agent can also **set up and change pipelines** for you. It never changes anything by itself: it prepares the change and shows a card in the chat with what it will do (the source, the tables, the schedule), and nothing happens until you press **Apply**. **Dismiss** throws it away.
@@ -39,6 +43,9 @@ The agent can also **set up and change pipelines** for you. It never changes any
 | *Add descriptions to the ga4_events columns* | A change to the model's YAML (Explore picks the descriptions up after the next run) |
 | *Run the changed models* / *do a full refresh of ga4_events* | A dbt run (`build`, `run`, `test` ... with your selection) |
 | *Run dbt every day at 21:00 UTC* | A [dbt schedule](/build/schedules/) (create, change, pause, resume, delete, run now) |
+| *Add a metric for paid orders to the orders model* | A change to the model's YAML in Explore's format (metrics, dimensions, labels, descriptions), then *Refresh Explore* |
+| *Refresh Explore* | Reads the committed dbt code into Explore |
+| *Write a document defining how we count active users* | A new [Knowledge](/knowledge/overview/) document (or a change to one; the agent can only change documents it can read) |
 | *Why did last night's dbt run fail?* | Nothing to approve: it reads the log and explains |
 
 **Code changes** show a diff of every file, and you choose where it goes: **Commit to main** (scheduled runs and Explore use it from then on) or **Put on a new branch**, which is pushed to GitHub for you to review and merge there (the card links to it). Repositories that are managed by the platform, without GitHub, can only commit to main. Only the dbt code can be changed this way (`models`, `macros`, `tests`, `seeds`, `snapshots`, `analyses`, `dbt_project.yml`, `packages.yml`); nothing else in the repository. Only the files in the change are committed: other edits waiting in the Build editor are left alone (if the change touches a file you have edited there, the card warns you). dbt runs always wait for your click, because they use BigQuery.
