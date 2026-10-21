@@ -25,7 +25,9 @@ Every query is checked **before** it runs. If it would process more than the pro
 
 ## Use Agent on every page
 
-**Pipelines, Build, Explore, Notebook, Dashboards and Knowledge** each have a **Use Agent** button next to their usual actions. It opens a wide box at the bottom of the page with a few suggestions for that page (for example *Run the models I changed* in Build) and room to describe what you want over several lines (Enter sends, Shift+Enter adds a line); sending opens the Agent with that already sent. In Pipelines, a row's **⋯ menu → Change with Agent** opens the Agent with that pipeline named, so you only finish the sentence. It's the same Agent as the Agent tab, with the same approval step.
+**Pipelines, Build, Explore, Notebook, Dashboards and Knowledge** each have a **Use Agent** button next to their usual actions. It opens a wide box at the bottom of the page, and the whole conversation happens there: suggestions for that page, room to describe what you want over several lines (Enter sends, Shift+Enter adds a line), and the cards you approve with **Apply**. When a change is applied the page refreshes itself. The box keeps the conversation while you stay on the same project; **Open in Agent** continues it in the full Agent page, and **New chat** starts over.
+
+The Agent is told which page you're on and what you have open there: in Pipelines the pipeline you've expanded, in Build the open file, the tab and your uncommitted changes. So *Pause this one* or *Explain the open file* works. In **Explore** the chart is shown in an embedded view the Agent can't see, so it doesn't know which chart is open: give it the chart's name. In Pipelines, a row's **⋯ menu → Change with Agent** opens the full Agent page with that pipeline named, so you only finish the sentence. It's the same Agent as the Agent tab, with the same approval step.
 
 ## Making changes: you approve each one
 
