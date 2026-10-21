@@ -29,6 +29,12 @@ No key file is needed; the environment is already authorised.
 - A notebook environment is private to its project. It can't reach other projects' data or the platform itself, and its internet access is limited to public HTTPS sites.
 - It **stops automatically after 60 minutes** without activity, to save resources. Start it again when you need it. Files in `notebooks/` are kept.
 
+## The assistant inside JupyterLab
+
+Open a notebook and press **✦ Assistant** (bottom right, or **Ctrl/⌘ + /**). A panel opens beside the notebook. It sees the notebook, the **selected cell** above all (its code and its output, including an error), so you can say *Explain this cell*, *Fix the error*, or *Plot sessions by day*. It knows your project's tables and that `bq` and `DATASET` are ready in the kernel.
+
+When it writes code, the proposal shows in the panel (as a diff when it changes the selected cell) with three buttons: **Accept & Run**, **Accept** (puts it in the cell, without running) and **Cancel**. Nothing is changed or run until you choose. It's available to editors and admins, needs the [Agent set up](/agent/setup/) for the project, and counts toward the project's AI spend cap like the Agent does. If the panel says to restart the notebook server, stop and start it once from the Notebook page.
+
 ## Write notebooks with the Agent
 
 The **Use Agent** button on the Notebook page (or the [Agent](/agent/overview/) itself) can create a notebook or add cells to one: *Create a notebook that charts sessions by source*. It shows you the cells first and writes them into the `notebooks/` folder only when you press **Apply**; you run the notebook yourself, and commit it from Build to share it.

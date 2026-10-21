@@ -1,0 +1,23 @@
+---
+import Default from "@astrojs/starlight/components/Search.astro";
+---
+
+<div class="search-and-ask">
+  <Default {...Astro.props}><slot /></Default>
+  <!-- Opens the "ask the docs" agent (loaded from the agent service) -->
+  <button type="button" class="ask-agent" data-rd-ask aria-label="Ask the agent">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" /><path d="M19 17l.7 1.8 1.8.7-1.8.7L19 22l-.7-1.8-1.8-.7 1.8-.7z" /></svg>
+    <span>Ask the agent</span>
+  </button>
+</div>
+
+<style>
+  .search-and-ask { display: flex; align-items: center; gap: 0.6rem; }
+  .ask-agent {
+    display: inline-flex; align-items: center; gap: 0.45rem; flex-shrink: 0; cursor: pointer;
+    padding: 0.5rem 0.85rem; border-radius: 0.5rem; border: 1px solid var(--sl-color-hairline);
+    background: var(--sl-color-bg-nav); color: var(--sl-color-text-accent); font: inherit; font-size: var(--sl-text-sm); font-weight: 600;
+  }
+  .ask-agent:hover { border-color: var(--sl-color-text-accent); }
+  @media (max-width: 50rem) { .ask-agent span { display: none; } .ask-agent { padding: 0.5rem; } }
+</style>

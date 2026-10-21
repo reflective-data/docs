@@ -16,6 +16,7 @@ export default defineConfig({
         { tag: "link", attrs: { rel: "stylesheet", href: "https://rd-site-agent-gnkwcqzp7a-ew.a.run.app/widget/rd-agent.css" } },
         { tag: "script", attrs: { src: "https://rd-site-agent-gnkwcqzp7a-ew.a.run.app/widget/rd-agent.js", defer: true } },
       ],
+      components: { Search: "./src/components/Search.astro" },
       customCss: ["@fontsource-variable/inter", "@fontsource-variable/jetbrains-mono", "./src/styles/custom.css"],
       social: [{ icon: "external", label: "reflectivedata.com", href: "https://reflectivedata.com" }],
       editLink: { baseUrl: "https://github.com/reflective-data/docs/edit/main/" },
