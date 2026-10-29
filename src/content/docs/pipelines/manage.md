@@ -25,7 +25,7 @@ Open **Edit pipeline**. The table list is read from the source again each time, 
 - **New tables** are copied in full on the next run.
 - **Changing how a table is copied** can mean it's copied again from scratch on the next run.
 - **Removed tables** stop updating. What was already copied stays in BigQuery.
-- **Changing the dataset** sends new data to the new dataset from the next run. Tables already copied stay where they were.
+- **Changing the dataset** sends new data to the new dataset from the next run. Tables already copied stay where they were. Tables copied by adding new rows carry on from where they left off, so the new dataset only gets rows from then on; to fill it with everything, switch those tables to “copy everything each time” for one run, then back.
 
 ## Editing a source
 
