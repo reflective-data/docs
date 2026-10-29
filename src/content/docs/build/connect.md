@@ -43,6 +43,9 @@ Keep the project in **your own GitHub repository**:
 
 The platform checks that you really have access to the installation, so nobody can link repositories they don't own. If the repository is empty, Build offers to create a starter dbt project in it.
 
+### Backing up a managed repository
+**Download backup** sits at the top of Build whenever the project uses a managed repository, and again at the start of **Move to GitHub**. It downloads everything in the repository as one `.tar.gz`: your files, the full commit history, and any changes you haven't committed yet (build output such as `target/` and `logs/` is left out). Editors and admins can download it. To restore, unpack it: it is an ordinary git repository, so `git log` shows the history and you can push it to any remote.
+
 ### Moving a managed repository to GitHub
 
 In a managed project an admin chooses **Move to GitHub**, installs the GitHub app if it isn't yet, and picks an **empty** repository. Your code and its **full history** are copied into it and the project then works from GitHub, including Pull. A repository that already has code is refused, so nothing is overwritten.
