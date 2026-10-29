@@ -28,7 +28,7 @@ Every command accepts `--project <name>` (or `account/project`), `--account <nam
 
 | Command | What it does |
 |---|---|
-| `rd dbt run [models]` | Run dbt (also `build`, `test`, `seed`, `compile`, `snapshot`) |
+| `rd dbt run [models]` | Run dbt (also `build`, `test`, `seed`, `compile`, `snapshot`, `deps`, `parse`, `ls`, `debug`) |
 | `rd runs list [--limit n]` | Recent runs |
 | `rd runs get <run>` | One run's details |
 | `rd runs logs <run> [--follow]` | A run's log; `--follow` watches it live |

@@ -29,6 +29,12 @@ In the **Runs** panel choose a command and press **Run**:
 | `seed` | Loads CSV files from your repo as tables. |
 | `compile` | Compiles the SQL without running it. |
 | `snapshot` | Runs snapshots. |
+| `deps` | Installs the packages listed in `packages.yml`. (Every other command does this first by itself, so you rarely need it.) |
+| `parse` | Checks that the whole project reads cleanly (models, YAML, references) without touching BigQuery. A quick way to catch mistakes. |
+| `ls` | Lists the models and other resources, optionally only the ones you select. |
+| `debug` | Checks the connection to BigQuery and the project's settings. |
+
+`deps`, `parse` and `debug` take no model selection, so the box for it is switched off for them. Only these commands can be started: anything else (such as `dbt run-operation`, `clean`, or free-form arguments) is deliberately not available, so a run can't be pointed anywhere it shouldn't.
 
 - **Models and options** (optional) limits what runs and how. Type a selector such as `my_model+` or `tag:daily` (`--select` is added for you), and optionally:
   - `--full-refresh` rebuilds incremental models from scratch (for example `ga4_events --full-refresh`, or just `--full-refresh` for everything);
