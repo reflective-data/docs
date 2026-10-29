@@ -47,6 +47,9 @@ The platform checks that you really have access to the installation, so nobody c
 
 In a managed project an admin chooses **Move to GitHub**, installs the GitHub app if it isn't yet, and picks an **empty** repository. Your code and its **full history** are copied into it and the project then works from GitHub, including Pull. A repository that already has code is refused, so nothing is overwritten.
 
+### Using a repository that already has code
+If you'd rather work from a repository that already holds your dbt project, choose it in the same **Move to GitHub** step. The platform tells you it isn't empty and offers **Discard managed code and use this repository**. Confirm, and the managed code and notebooks are **deleted** (this can't be undone) and the project works from the repository exactly as it is: nothing in the repository is changed. Afterwards, an admin presses **Refresh models** in Explore so it reads the new code.
+
 :::note
 A managed repository is stored by the platform; ask your account manager about backups and export if you need a copy outside it. Moving to GitHub is the way to get one yourself.
 :::
