@@ -12,6 +12,7 @@ The **Pipelines** page lists every pipeline in the project with its source, data
 | Action | What it does |
 |---|---|
 | **Sync now** | Starts a run immediately, in addition to the schedule. |
+| **Clear data and re-copy** (⋯) | Replaces the tables this pipeline fills with a full new copy and starts incremental tables over from the beginning. Use it after moving a pipeline to a new dataset, to fix bad data, or after a schema change. It asks you to confirm. The old rows are dropped once the new copy is in; models reading these tables see the new data when it finishes, which can take a while for big sources, and some sources only keep a limited history. |
 | **Edit pipeline** (⋯) | Change the name, schedule, BigQuery dataset, which tables are copied and how. |
 | **Edit source** (⋯) | Change the source's settings or credentials. |
 | **Pause / Resume** (⋯) | Stops or restarts scheduled runs without deleting anything. |
@@ -25,7 +26,7 @@ Open **Edit pipeline**. The table list is read from the source again each time, 
 - **New tables** are copied in full on the next run.
 - **Changing how a table is copied** can mean it's copied again from scratch on the next run.
 - **Removed tables** stop updating. What was already copied stays in BigQuery.
-- **Changing the dataset** sends new data to the new dataset from the next run. Tables already copied stay where they were. Tables copied by adding new rows carry on from where they left off, so the new dataset only gets rows from then on; to fill it with everything, switch those tables to “copy everything each time” for one run, then back.
+- **Changing the dataset** sends new data to the new dataset from the next run. Tables already copied stay where they were. Tables copied by adding new rows carry on from where they left off, so the new dataset only gets rows from then on. To fill it with everything, use **Clear data and re-copy** (above) after saving.
 
 ## Editing a source
 

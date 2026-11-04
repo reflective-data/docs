@@ -39,6 +39,7 @@ The agent can also **set up and change pipelines** for you. It never changes any
 | *Run the LED pipeline at 08:30 and 20:30 UTC* | A schedule change |
 | *Add the deals table to it* / *stop copying contact_lists* | Table changes |
 | *Pause the Bing pipeline* / *sync HubSpot now* | Pause, resume, or a run right away |
+| *Clear the Bing data and copy everything again* | A destructive card: the pipeline's tables are replaced by a full new copy |
 | *Why did last night's sync fail?* | Nothing to approve: it reads the runs and explains |
 | *Delete the old pipeline* | A deletion card (the source and the data already copied stay) |
 | *Add a staging model for HubSpot deals* | New or changed files in your dbt repository, shown as a diff |
